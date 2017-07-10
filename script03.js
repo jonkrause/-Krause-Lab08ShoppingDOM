@@ -26,36 +26,29 @@ function addItemFunc(){
     
     console.log(array01);
     
-    // insert action to make seperate div for each property here
-    
-    document.getElementById("divList").innerHTML = newItem;
-    document.getElementById("total").innerHTML = total;
-    document.getElementById("arrName").innerHTML = "Added: " + newItem;
-    document.getElementById("arrPrice").innerHTML = "Price: " + newPrice;
-    document.getElementById("arrQuant").innerHTML = "Qty: " + newQuant;
-
-
-    
-
-// totals function start
+// insert action to make seperate div for each property here
+//    var autoDiv = document.createElement("div");
+//    autoDiv.id = "newDiv" + x;
+//    document.body.appendChild (autoDiv);
+    runTotal();
     
     var subTotal;
-
     function runTotal() {
         subTotal = 0;
         array01.forEach(function (food) {
             subTotal += food.price;
             // console.log(food.price);
 
-        })
-    }
-
-    runTotal();
-
-    var salesTax = .06;
-    var total = subTotal + ((subTotal * newQuant) * .06);
-    var newTax = ((subTotal * newQuant) * .06).toFixed(2);
+        });
+    };
     
+    
+    var salesTax = .06;
+    var newTax = ((subTotal * newQuant) * .06);
+    var total = (newQuant * newPrice) + newTax;
+    var finalTotal = total + newQuant * newPrice;
+    console.log("final: " + finalTotal);
+
     console.log("new tax: " + newTax);
 
     console.log(newQuant);
@@ -63,5 +56,27 @@ function addItemFunc(){
     console.log("Sales Tax: " + "$ " + ((subTotal * newQuant) * .06).toFixed(2));
     console.log("Total: " + "$ " + total.toFixed(2));
     runTotal();
+    
+    var newDiv = document.createElement('div');
+    newDiv.innerHTML = "Item: " + newItem + " | Price: " + newPrice + " | Quantity: " + newQuant;
+    newDiv.setAttribute('class', 'listClass');
+    document.body.appendChild(newDiv);
+    document.getElementById("divTotal").innerHTML = total.toFixed(2);
+    
+//    
+//    document.getElementById("newDiv").innerHTML = newItem;
+//    document.getElementById("total").innerHTML = total;
+//    document.getElementById("arrName").innerHTML = "Added: " + newItem;
+//    document.getElementById("arrPrice").innerHTML = "Price: " + newPrice;
+//    document.getElementById("arrQuant").innerHTML = "Qty: " + newQuant;
+
+
+    
+
+// totals function start
+    
+    
+
+    
 
 };
