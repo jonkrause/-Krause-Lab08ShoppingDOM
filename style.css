@@ -1,0 +1,127 @@
+
+
+body {
+    background-color: #dceaf0;
+}
+
+.listClass {
+    font-family: 'Raleway', sans-serif;
+    
+}
+.listClass:nth-child(odd) {
+    background: #e0e0e0;
+
+}
+
+#mainBox {
+    width: 500px;
+    min-height: 300px;
+    box-shadow: 0px 3px 40px #c8c4c2;
+    text-align: center;
+    padding: 25px;
+    background-color: #fff;
+    margin: 0 auto;
+    
+
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#divTotal {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#addText, #priceText {
+    width: 220px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #c8c4c2;
+    color: #c8c4c2;
+}
+
+
+#addItem {
+    width: 100%;
+    display: relative;
+    height: 40px;
+    background-color: #3598db;
+    color: #fff;
+    border: none;
+    margin-top: 20px
+    
+}
+
+
+
+#control {
+    width: 500px;
+    margin: 20px auto;
+}
+
+#quantText {
+    width: 50px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #c8c4c2;
+    color: #c8c4c2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+#mainBox {
+    width: 650px;
+    height: 75px;
+    background-color: #fff;
+    margin: 0px auto;
+
+}
+
+.listClass {
+    width: 650px;
+    color: darkgreen;
+    background-color: salmon;
+    font-size: 18px;
+    text-align: right;
+    margin: 0px auto;
+
+}
+
+#divTotal {
+    font-size: 50px;
+    text-align: right;
+    margin: 0px auto;
+    font-family: 'Assistant', sans-serif;
+}
+
+#control {
+    width: 600px;
+    margin: 0px auto;
+}
+
+#quantText {
+    width: 50px;
+}
+
+
+*/

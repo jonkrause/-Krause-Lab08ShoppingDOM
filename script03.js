@@ -58,10 +58,14 @@ function addItemFunc(){
     runTotal();
     
     var newDiv = document.createElement('div');
-    newDiv.innerHTML = "Item: " + newItem + " | Price: " + newPrice + " | Quantity: " + newQuant;
+    newDiv.innerHTML = "Item: " + newItem + " | Price: $ " + newPrice.toFixed(2) + " | Quantity: " + newQuant;
     newDiv.setAttribute('class', 'listClass');
-    document.body.appendChild(newDiv);
-    document.getElementById("divTotal").innerHTML = total.toFixed(2);
+    document.getElementById("mainBox").appendChild(newDiv);
+    document.getElementById("divTotal").innerHTML = "$ " + total.toFixed(2);
+    document.getElementById("addText").value = "Item Name";
+    document.getElementById("priceText").value = "Item Price";
+    document.getElementById("quantText").value = "Quantity";
+
     
 //    
 //    document.getElementById("newDiv").innerHTML = newItem;
