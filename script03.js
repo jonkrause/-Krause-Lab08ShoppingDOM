@@ -27,9 +27,7 @@ function addItemFunc(){
     console.log(array01);
     
 // insert action to make seperate div for each property here
-//    var autoDiv = document.createElement("div");
-//    autoDiv.id = "newDiv" + x;
-//    document.body.appendChild (autoDiv);
+
     runTotal();
     
     var subTotal;
@@ -65,22 +63,5 @@ function addItemFunc(){
     document.getElementById("addText").value = "Item Name";
     document.getElementById("priceText").value = "Item Price";
     document.getElementById("quantText").value = "Quantity";
-
-    
-//    
-//    document.getElementById("newDiv").innerHTML = newItem;
-//    document.getElementById("total").innerHTML = total;
-//    document.getElementById("arrName").innerHTML = "Added: " + newItem;
-//    document.getElementById("arrPrice").innerHTML = "Price: " + newPrice;
-//    document.getElementById("arrQuant").innerHTML = "Qty: " + newQuant;
-
-
-    
-
-// totals function start
-    
-    
-
-    
 
 };

@@ -1,15 +1,30 @@
 
 
 body {
-    background-color: #dceaf0;
+    background-color: #95E1D3;
 }
 
+#mainTitle {
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 85px;
+    color: #F38181;
+    text-shadow: -3px 2px #000;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: -40px;
+    margin-bottom: 60px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
 .listClass {
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
     
 }
-.listClass:nth-child(odd) {
-    background: #e0e0e0;
+.listClass:nth-child(even) {
+    background-color: #FCE38A;
 
 }
 
@@ -19,10 +34,8 @@ body {
     box-shadow: 0px 3px 40px #c8c4c2;
     text-align: center;
     padding: 25px;
-    background-color: #fff;
+    background-color: #EAFFD0;
     margin: 0 auto;
-    
-
 }
 
 h2 {
@@ -33,6 +46,7 @@ h2 {
 #divTotal {
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 }
 
 #addText, #priceText {
@@ -45,19 +59,19 @@ h2 {
     color: #c8c4c2;
 }
 
-
 #addItem {
     width: 100%;
     display: relative;
     height: 40px;
-    background-color: #3598db;
+    background-color: #F38181;
     color: #fff;
     border: none;
-    margin-top: 20px
-    
+    margin-top: 20px;
+/*    box-shadow: -2px 2px 4px #000;*/
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+
 }
-
-
 
 #control {
     width: 500px;
@@ -73,55 +87,3 @@ h2 {
     border-bottom: 1px solid #c8c4c2;
     color: #c8c4c2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-#mainBox {
-    width: 650px;
-    height: 75px;
-    background-color: #fff;
-    margin: 0px auto;
-
-}
-
-.listClass {
-    width: 650px;
-    color: darkgreen;
-    background-color: salmon;
-    font-size: 18px;
-    text-align: right;
-    margin: 0px auto;
-
-}
-
-#divTotal {
-    font-size: 50px;
-    text-align: right;
-    margin: 0px auto;
-    font-family: 'Assistant', sans-serif;
-}
-
-#control {
-    width: 600px;
-    margin: 0px auto;
-}
-
-#quantText {
-    width: 50px;
-}
-
-
-*/
